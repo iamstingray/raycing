@@ -46,15 +46,20 @@ const HeroContent = styled.div`
   text-align: center;
   color: #ffffff;
   z-index: 1;
+  background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background behind text */
+  padding: 1rem 2rem;
+  border-radius: 10px; /* Optional: Rounded corners for better aesthetics */
 `;
 
 const HeroTitle = styled.h1`
   font-size: 4rem;
   margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 `;
 
 const HeroSubtitle = styled.p`
   font-size: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 `;
 
 const Hero = () => (
@@ -62,7 +67,7 @@ const Hero = () => (
     <LogoBackground />
     <HeroContent>
       <HeroTitle>Willkommen bei Team RaYcing</HeroTitle>
-      <HeroSubtitle>Virtuelle Rennsport-Exzellenz seit 2019</HeroSubtitle>
+      <HeroSubtitle>Virtuelle Rennsport-Exzellenz est 2019</HeroSubtitle>
     </HeroContent>
   </HeroSection>
 );
