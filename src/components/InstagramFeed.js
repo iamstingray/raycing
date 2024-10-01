@@ -1,5 +1,17 @@
 // src/components/InstagramFeed.js
 import React, { useEffect } from 'react';
+import styled from 'styled-components';
+
+
+const InstagramContainer = styled.div`
+  display: flex;
+  justify-content: center; 
+  margin: 2rem 0; 
+`;
+
+const InstagramWrapper = styled.div`
+  width: 50%;
+`;
 
 const InstagramFeed = () => {
   useEffect(() => {
@@ -13,17 +25,22 @@ const InstagramFeed = () => {
   }, []);
 
   return (
-    <div>
-      {/* The iframe for the Instagram feed */}
-      <iframe
-        title="Instagram Feed"
-        src="//lightwidget.com/widgets/11e2b937e4585c06849d352e3ff99612.html"
-        scrolling="no"
-        allowTransparency="true"
-        className="lightwidget-widget"
-        style={{ width: '100%', border: 0, overflow: 'hidden' }}
-      ></iframe>
-    </div>
+    <InstagramContainer>
+      <InstagramWrapper>
+        <iframe
+          title="Instagram Feed"
+          src="//lightwidget.com/widgets/11e2b937e4585c06849d352e3ff99612.html"
+          scrolling="no"
+          allowTransparency="true"
+          className="lightwidget-widget"
+          style={{
+            width: '100%',
+            border: 0,
+            overflow: 'hidden',
+          }}
+        ></iframe>
+      </InstagramWrapper>
+    </InstagramContainer>
   );
 };
 

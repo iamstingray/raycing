@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { FaInstagram, FaDiscord } from 'react-icons/fa';
 
+
 const SocialWrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -20,10 +21,10 @@ const IconLink = styled.a`
 
 const SocialMedia = () => (
   <SocialWrapper>
-    <IconLink href="https://instagram.com/yourprofile" target="_blank" aria-label="Instagram">
+    <IconLink href="https://instagram.com/teamraycing" target="_blank" aria-label="Instagram">
       <FaInstagram />
     </IconLink>
-    <IconLink href="https://discord.gg/yourdiscordinvite" target="_blank" aria-label="Discord">
+    <IconLink href="https://discord.gg/raycing" target="_blank" aria-label="Discord">
       <FaDiscord />
     </IconLink>
   </SocialWrapper>
